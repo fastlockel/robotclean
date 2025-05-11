@@ -12,7 +12,7 @@ export default function GridTable({ grid }: Props) {
               {row.map((cell, j) => (
                 <td key={j}
                   className={`grid-cell 
-                  ${(cell === "R" || cell === "RL") ? "robot-cell" :
+                  ${(cell === "R" || cell === "RL" || cell === "RDL") ? "robot-cell" :
                     (cell === "D" || cell === "DL") ? "garbage-cell" :
                     cell === "Z" ? "trash-cell" : 
                     (cell === "U" || cell === "UL") ? "unknown-cell" : ""} 
